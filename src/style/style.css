@@ -5,8 +5,11 @@
 
 body {
   background-color: #81a69b;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(https://storage.googleapis.com/theprogspace-photos/2018/10/53-SoA-beprog.jpg);
+  background-image: linear-gradient(
+      rgba(49, 170, 240, 0.5),
+      rgba(12, 40, 199, 0.5)
+    ),
+    url(https://m.media-amazon.com/images/M/MV5BZmJjMDVjZWItOGRlYy00ZTM5LWE1ZTktY2I0YTA4ZTlmMGY3XkEyXkFqcGdeQXVyOTc5MDI5NjE@._V1_.jpg);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-attachment: fixed;
@@ -26,12 +29,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #d6d6d6;
+  color: #ffffff;
   margin: 25px 0 -20% 0;
   padding: 10px 0 -50px 0;
   justify-content: space-between;
   line-height: 1px;
   font-weight: lighter;
+  -webkit-text-stroke: 0.2px black;
 }
 
 .BandClass h2 {
@@ -65,9 +69,38 @@ body {
 .main-header {
   text-align: center;
   color: #ffffff;
+  background-color: rgba(228, 32, 195, 0.788);
+  padding: 0.1px 0 1px 0;
+  opacity: 90%;
 }
 .main-header h1 {
   font-size: 20px;
+}
+
+.topnav {
+  background-color: rgba(228, 32, 195, 0.788);
+  overflow: hidden;
+  padding: 0.2px 0 10px 0;
+  text-align: center;
+  opacity: 90%;
+  border-bottom: black;
+}
+.topnav a {
+  /* float: left; */
+  margin: 0 auto 0 auto;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 26px 14px 26px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgb(228, 32, 195);
+  color: black;
+}
+.topnav a.active {
+  /* background-color: #4caf50; */
+  color: white;
 }
 
 .button1 {
@@ -96,6 +129,13 @@ body {
 .button1:hover {
   color: #000000;
   background-color: #e9c007;
+}
+
+#About {
+  padding: 50px;
+  text-align: justify;
+  margin: 0 50px 0 50px;
+  color: wheat;
 }
 
 @media (min-width: 576px) {

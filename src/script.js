@@ -5,12 +5,15 @@ import "./style/style.css";
 import Test from "./component/test.js";
 import TheHeader from "./component/Main-Header.js";
 import Bands from "./component/Bands.js";
+import TheNavBar from "./component/Nav-Bar.js";
+import About from "./component/About.js";
 
 const App = () => {
   return (
     <div>
       <div>
         <TheHeader />
+        <TheNavBar />
       </div>
       <div className="main-container">
         <Bands
@@ -75,6 +78,9 @@ const App = () => {
           src="https://f4.bcbits.com/img/0012582151_10.jpg"
           alt=""
         />
+      </div>
+      <div id="About">
+        <About />
       </div>
     </div>
   );
