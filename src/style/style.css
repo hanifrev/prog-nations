@@ -138,6 +138,11 @@ body {
   color: wheat;
 }
 
+.headlink a {
+  text-decoration: none;
+  color: aqua;
+}
+
 @media (min-width: 576px) {
   .main-container {
     display: grid;
